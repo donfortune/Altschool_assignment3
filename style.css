@@ -1,0 +1,399 @@
+/* css Reset*/
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Lato', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    margin: 0 4rem;
+    font-size: 1.4rem;
+    border-bottom: #73787e 1px solid;
+}
+.header a:link,.header a:active,.header a:visited{
+    text-decoration: none;
+    color: #1D2C3C;
+    font-size:1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.flex-head,.flex-head2{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.flex-head::before{
+    content: '1';
+    color:#1179BF;
+    font-weight: 700;
+    font-size: 1.6rem;
+    position: absolute;
+    left:1.2rem;
+}
+.flex-head2::before{
+    content: '2';
+    color:#1179BF;
+    font-weight: 700;
+    font-size: 1.6rem;
+    position: absolute;
+    left:1.2rem;
+    
+}
+.account{
+   padding:0.8rem;
+   border:1px solid #73787e;
+   border-radius:0.5rem;
+}
+.header img{
+    width: 20rem;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+}
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    width:89rem;
+    margin: 5rem auto;
+    box-shadow: 0 0px 10px #73787e;
+
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: flex-start;
+    color: #1D2C3C;
+    background-color: #fff;
+
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 400;
+    text-shadow:2px 2px 2px #0000009c; 
+    color: #1D2C3C;
+}
+h4{
+    font-size:1.8rem;
+    font-weight: 700;
+  
+}
+.info-section{
+    border-top: #73787e 1px solid;
+    padding-top: 4rem;
+}
+label{
+    font-weight: 700;
+    margin-bottom: 1rem !important;
+}
+
+form{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.first-name-flex{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+#first-name,#last-name{
+    margin-top: 1rem;
+}
+#e-mail{
+    width: 30rem;
+}
+.email{
+    display: block;
+}
+.border{
+    border-radius: 3px;
+    background-color:#EDEFF2;
+    border-style: none;
+    color: #73787e;
+    width: 100%;
+    padding: 1rem;
+}
+
+.circle-svg{
+    width: 3.2rem;
+    height: 3.2rem;
+}
+.credit-card-flex{
+    display: flex;
+    background-color: #EDEFF2;
+    border-radius: 3px;
+    margin-top: 1rem;
+
+}
+#credit-card{
+   margin-right: 14rem;
+}
+#date{
+    text-align: end;
+}
+#cvc{
+    max-width: 5rem;
+}
+
+/************************/
+/* BUTTON SEC */
+/************************/
+.button-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    width: 100%;
+
+}
+.btn{
+width: 100%;
+color: #fff;
+background-color:#038E7D;
+padding: 1rem;
+border-style: none;
+border-radius: 5px;
+font-size: 1.6rem;
+cursor: pointer;
+}
+
+.left-side,.right-side{
+    padding: 3rem;
+}
+.left-side{
+    width: 58rem;
+}
+.right-side{
+    color: #fff;
+    background-color: #1179BF;
+    width:31rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#switch-link:link,#switch-link:active,#switch-link:visited{
+    color:#fff;
+    font-size: 1.6rem;
+   
+}
+h5{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.money{
+position:relative;
+margin-left: 2rem;
+}
+#dollar{
+text-orientation: upright;
+position: absolute;
+top: 2.5rem;
+left: -1.5rem;
+font-size: 2.4rem;
+font-weight: 400;
+}
+#ninety-nine{
+font-size: 7.2rem;
+padding-right: 1rem;
+font-weight: 300;
+}
+#year{
+font-size: 2.4rem;
+font-weight: 400;
+}
+
+.tick-svg{
+    width: 2rem;
+    height: 2rem;
+}
+
+.need{
+    font-size: 1.6rem;
+}
+.free-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+    gap: 1.5rem;
+    
+
+}
+.free-list li{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.6rem;
+    
+}
+.ftp-text{
+    border-top: #fff solid 1px;
+    padding-top: 3rem;
+    font-size: 1.8rem;
+    font-weight:300;
+    font-style: italic;
+}
+
+.kick-beard{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+.kick-beard p{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.kirk-beard-pic{
+    width: 4rem;
+    border-radius: 10rem;
+    filter: grayscale(100%);
+}
+
+footer p{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10rem;
+    color:#636B6F;
+}
+.terms:link,.term:active,.terms:visited{
+color: #1179BF;
+}
+
+@media only screen and (max-width:820px){
+    .left-side {
+    width: 45rem;
+    }
+    .header img{
+        width: 15rem;
+    }
+
+}
+
+@media only screen and (max-width:576px){
+    html{
+        font-size: 6px;
+    }
+    .container{
+        max-width: 65rem;
+        margin: 4rem auto;
+
+    }
+    h4{
+        font-size: 1rem;
+    }
+    #credit-card{
+        margin-right: 0;
+    }
+}
